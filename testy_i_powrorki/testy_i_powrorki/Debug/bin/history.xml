@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=testy_i_powrorki.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\testy_i_powrorki -TC:\CooCox\CoIDE\configuration\ProgramData\testy_i_powrorki/arm-gcc-link.ld -g">
+      <target file="testy_i_powrorki.elf" lastModified="14529267f40">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="145292667d0"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14529266fa0"/>
+         <source file="..\obj\main.o" lastModified="14529266fa0"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14529266fa0"/>
+         <source file="..\obj\codec.o" lastModified="14529266fa0"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14529266fa0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14529266fa0"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="14529267770"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="14529267770"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="14529267770"/>
+         <source file="..\obj\misc.o" lastModified="14529267770"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="14529267770"/>
+      </target>
+   </processor>
+</history>
