@@ -130,7 +130,9 @@ int main(void)
 	codec_init();
 	codec_ctrl_init();
 
+	Codec_VolumeCtrl(100); //0-255 glosnosc
 	I2S_Cmd(CODEC_I2S, ENABLE);
+
 
 	IniTimer();
 
