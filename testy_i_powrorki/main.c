@@ -60,7 +60,6 @@ void IniTimer()//obsluga timerem
 
 void TIM2_IRQHandler(void)
 {
-	int glosnosc = 1;
 		if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
 		{
 
@@ -69,7 +68,7 @@ void TIM2_IRQHandler(void)
 		    {
 				if (nr_tab==0)
 				{
-					SPI_I2S_SendData(CODEC_I2S,tab0[mel]*glosnosc);
+					SPI_I2S_SendData(CODEC_I2S,tab0[mel]);
 					if (mel>=10000-1)
 					{
 						mel=-1;
@@ -80,7 +79,7 @@ void TIM2_IRQHandler(void)
 				}else
 				if (nr_tab==1)
 				{
-					SPI_I2S_SendData(CODEC_I2S,tab1[mel]*glosnosc);
+					SPI_I2S_SendData(CODEC_I2S,tab1[mel]);
 					if (mel>=10000-1)
 					{
 						mel=-1;
@@ -91,7 +90,7 @@ void TIM2_IRQHandler(void)
 				}else
 				if (nr_tab==2)
 				{
-					SPI_I2S_SendData(CODEC_I2S,tab2[mel]*glosnosc);
+					SPI_I2S_SendData(CODEC_I2S,tab2[mel]);
 					if (mel>=4768-1)
 					{
 						mel=-1;
