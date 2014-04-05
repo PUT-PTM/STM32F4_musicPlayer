@@ -81,7 +81,9 @@ void codec_ctrl_init();
 void send_codec_ctrl(uint8_t controlBytes[], uint8_t numBytes);
 uint8_t read_codec_register(uint8_t mapByte);
 
-
+void Codec_VolumeCtrl(uint8_t Volume); //dodane
+void Codec_WriteRegister(uint8_t RegisterAddr, uint8_t RegisterValue); //dodane
+void Codec_TIMEOUT_UserCallback (void); //dodane
 
 
 #endif /* __CODEC_H */
