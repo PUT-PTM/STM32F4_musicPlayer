@@ -21,6 +21,8 @@
 #define I2S3_MCLK_PIN 	GPIO_Pin_7   //port C
 #define I2S3_SCLK_PIN 	GPIO_Pin_10  //port C
 #define I2S3_SD_PIN 	GPIO_Pin_12  //port C
+//#define I2S3_SCLK_PIN 	GPIO_Pin_13  //port C
+//#define I2S3_SD_PIN 	GPIO_Pin_14  //port C
 
 #define CODEC_RESET_PIN GPIO_Pin_4  //port D
 
@@ -73,14 +75,14 @@
 #define CODEC_MAP_SPEAK_STATUS 0x31
 #define CODEC_MAP_CHARGE_PUMP_FREQ 0x34
 
-
+#define CODEC_FLAG_TIMEOUT ((uint32_t)0x1000) //dodane
+#define CODEC_LONG_TIMEOUT ((uint32_t)(300 * CODEC_FLAG_TIMEOUT)) //dodane
 
 //function prototypes
 void codec_init();
 void codec_ctrl_init();
 void send_codec_ctrl(uint8_t controlBytes[], uint8_t numBytes);
 uint8_t read_codec_register(uint8_t mapByte);
-
 void Codec_VolumeCtrl(uint8_t Volume); //dodane
 void Codec_WriteRegister(uint8_t RegisterAddr, uint8_t RegisterValue); //dodane
 void Codec_TIMEOUT_UserCallback (void); //dodane

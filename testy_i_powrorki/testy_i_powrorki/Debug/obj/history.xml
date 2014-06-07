@@ -1,41 +1,74 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\testy_i_powrorki\cmsis -I..\..\..\workspace\testy_i_powrorki\cmsis_boot -I..\..\..\workspace -I..\..\..\workspace\testy_i_powrorki\cmsis_lib\include -I..\..\.. -I..\..\..\workspace\testy_i_powrorki\cmsis_lib -I..\..\..\workspace\testy_i_powrorki">
-      <target file="stm32f4xx_gpio.o" lastModified="14529266fa0">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="144c9b2c460"/>
-      </target>
-      <target file="stm32f4xx_tim.o" lastModified="14529267770">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="144cd2342a0"/>
-      </target>
-      <target file="codec.o" lastModified="14529266fa0">
-         <source file="..\..\..\codec.c" lastModified="1452924ba20"/>
-      </target>
-      <target file="system_stm32f4xx.o" lastModified="14529266fa0">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144c9c7b3c0"/>
-      </target>
-      <target file="stm32f4xx_i2c.o" lastModified="14529267770">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="144c9cb6510"/>
-      </target>
-      <target file="startup_stm32f4xx.o" lastModified="14529266fa0">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="144c9b2b4c0"/>
-      </target>
-      <target file="stm32f4xx_exti.o" lastModified="14529267770">
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\testy_i_powrorki\cmsis_boot -I..\..\..\workspace\testy_i_powrorki\lib_cm4 -I..\..\..\workspace\testy_i_powrorki\FatFs_SD -I..\..\.. -I..\..\..\workspace\testy_i_powrorki\cmsis -I..\..\..\workspace\testy_i_powrorki\delay -I..\..\..\workspace\testy_i_powrorki -I..\..\..\workspace\testy_i_powrorki\cmsis_lib\include -I..\..\..\workspace\testy_i_powrorki\cmsis_lib -I..\..\..\workspace">
+      <target file="stm32f4xx_exti.o" lastModified="14677766cd8">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="144ca502570"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="145292667d0">
+      <target file="karta_sd.o" lastModified="14677765ccb">
+         <source file="..\..\..\karta_sd.c" lastModified="146722f91ff"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="1467776643d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="144c9b2c460"/>
+      </target>
+      <target file="stm32f4xx_sdio.o" lastModified="146777652c8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="145f268ed70"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="14677765086">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="144ca550f40"/>
       </target>
-      <target file="main.o" lastModified="14529266fa0">
-         <source file="..\..\..\main.c" lastModified="14529266000"/>
+      <target file="startup_stm32f4xx.o" lastModified="146777653a3">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="144c9b2b4c0"/>
       </target>
-      <target file="stm32f4xx_spi.o" lastModified="14529267770">
+      <target file="stm32f4xx_tim.o" lastModified="14677766fe5">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="144cd2342a0"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="14677765e9f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="145f1e7f5d0"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14677766556">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144c9c7b3c0"/>
+      </target>
+      <target file="misc.o" lastModified="14677766df1">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="144ca545b90"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="1467776669e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="145f268aef0"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="14677766a48">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="144c9cb7c80"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="14529266fa0">
+      <target file="codec.o" lastModified="146777658f2">
+         <source file="..\..\..\codec.c" lastModified="146720045b8"/>
+      </target>
+      <target file="diody.o" lastModified="14677765fc8">
+         <source file="..\..\..\diody.c" lastModified="14671e71f00"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1467776579b">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="144c9b2b4c0"/>
       </target>
-      <target file="misc.o" lastModified="14529267770">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="144ca545b90"/>
+      <target file="fpu.o" lastModified="146777654bc">
+         <source file="..\..\..\lib_cm4\fpu.c" lastModified="1463badcb40"/>
+      </target>
+      <target file="delay.o" lastModified="14677765190">
+         <source file="..\..\..\delay\delay.c" lastModified="133846b2430"/>
+      </target>
+      <target file="przycisk.o" lastModified="146777661ad">
+         <source file="..\..\..\przycisk.c" lastModified="14660fe96ff"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="14677766baf">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="144c9cb6510"/>
+      </target>
+      <target file="spi_sd.o" lastModified="14677766304">
+         <source file="..\..\..\FatFs_SD\spi_sd.c" lastModified="1463b9fd120"/>
+      </target>
+      <target file="ff.o" lastModified="146777668f0">
+         <source file="..\..\..\FatFs_SD\ff.c" lastModified="13537e14a70"/>
+      </target>
+      <target file="vectors.o" lastModified="14677764ee0">
+         <source file="..\..\..\lib_cm4\vectors.c" lastModified="1331cfdf020"/>
+      </target>
+      <target file="main.o" lastModified="14677765633">
+         <source file="..\..\..\main.c" lastModified="14677763bf4"/>
       </target>
    </processor>
 </history>

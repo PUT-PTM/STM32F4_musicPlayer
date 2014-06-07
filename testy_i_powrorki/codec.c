@@ -10,6 +10,8 @@
 __IO uint32_t  CODECTimeout = CODEC_LONG_TIMEOUT; //dodane
 #define CODEC_ADDRESS                   0x94  /* b00100111 */ //dodane
 
+
+
 void codec_init()
 {
 	GPIO_InitTypeDef PinInitStruct;
@@ -67,7 +69,7 @@ void codec_init()
 
 	// configure I2S port
 	SPI_I2S_DeInit(CODEC_I2S);
-	I2S_InitType.I2S_AudioFreq = I2S_AudioFreq_16k;			// <-- tutaj zmienione
+	I2S_InitType.I2S_AudioFreq = I2S_AudioFreq_11k;			// <-- tutaj zmienione
 	I2S_InitType.I2S_MCLKOutput = I2S_MCLKOutput_Enable;
 	I2S_InitType.I2S_DataFormat = I2S_DataFormat_16b;		// <-- nie zmienioone, ale dlatego nie trzeba zmniejszac wartosci na 12 bitow
 	I2S_InitType.I2S_Mode = I2S_Mode_MasterTx;
@@ -75,7 +77,7 @@ void codec_init()
 	I2S_InitType.I2S_CPOL = I2S_CPOL_Low;
 
 	I2S_Init(CODEC_I2S, &I2S_InitType);
-	//I2S_Cmd(CODEC_I2S, ENABLE);
+	I2S_Cmd(CODEC_I2S, ENABLE);
 
 
 	// configure I2C port
@@ -89,8 +91,6 @@ void codec_init()
 
 	I2C_Cmd(CODEC_I2C, ENABLE);
 	I2C_Init(CODEC_I2C, &I2C_InitType);
-
-
 }
 
 
@@ -174,7 +174,6 @@ void codec_ctrl_init()
 	CodecCommandBuffer[0] = CODEC_MAP_PWR_CTRL1;
 	CodecCommandBuffer[1] = 0x9E;
 	send_codec_ctrl(CodecCommandBuffer, 2);
-
 }
 
 void send_codec_ctrl(uint8_t controlBytes[], uint8_t numBytes)
@@ -210,7 +209,6 @@ void send_codec_ctrl(uint8_t controlBytes[], uint8_t numBytes)
 	    //wait until it's finished sending before creating STOP
 	}
 	I2C_GenerateSTOP(CODEC_I2C, ENABLE);
-
 }
 
 uint8_t read_codec_register(uint8_t mapbyte)
@@ -358,3 +356,5 @@ void Codec_TIMEOUT_UserCallback(void)
   {
   }
 }
+
+

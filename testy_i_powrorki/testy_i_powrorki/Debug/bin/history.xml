@@ -1,19 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=testy_i_powrorki.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\testy_i_powrorki -TC:\CooCox\CoIDE\configuration\ProgramData\testy_i_powrorki/arm-gcc-link.ld -g">
-      <target file="testy_i_powrorki.elf" lastModified="14529267f40">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="145292667d0"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="14529266fa0"/>
-         <source file="..\obj\main.o" lastModified="14529266fa0"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14529266fa0"/>
-         <source file="..\obj\codec.o" lastModified="14529266fa0"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14529266fa0"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="14529266fa0"/>
-         <source file="..\obj\stm32f4xx_spi.o" lastModified="14529267770"/>
-         <source file="..\obj\stm32f4xx_i2c.o" lastModified="14529267770"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="14529267770"/>
-         <source file="..\obj\misc.o" lastModified="14529267770"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="14529267770"/>
+   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=testy_i_powrorki.map -O0 --gc-sections -LD:\CooCox\CoIDE\configuration\ProgramData\Projekt -TD:\CooCox\CoIDE\configuration\ProgramData\Projekt/arm-gcc-link.ld -g">
+      <target file="testy_i_powrorki.elf" lastModified="146777674a8">
+         <source file="..\obj\vectors.o" lastModified="14677764ee0"/>
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="14677765086"/>
+         <source file="..\obj\delay.o" lastModified="14677765190"/>
+         <source file="..\obj\stm32f4xx_sdio.o" lastModified="146777652c8"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="146777653a3"/>
+         <source file="..\obj\fpu.o" lastModified="146777654bc"/>
+         <source file="..\obj\main.o" lastModified="14677765633"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1467776579b"/>
+         <source file="..\obj\codec.o" lastModified="146777658f2"/>
+         <source file="..\obj\karta_sd.o" lastModified="14677765ccb"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="14677765e9f"/>
+         <source file="..\obj\diody.o" lastModified="14677765fc8"/>
+         <source file="..\obj\przycisk.o" lastModified="146777661ad"/>
+         <source file="..\obj\spi_sd.o" lastModified="14677766304"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1467776643d"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14677766556"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="1467776669e"/>
+         <source file="..\obj\ff.o" lastModified="146777668f0"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="14677766a48"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="14677766baf"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="14677766cd8"/>
+         <source file="..\obj\misc.o" lastModified="14677766df1"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="14677766fe5"/>
       </target>
    </processor>
 </history>
